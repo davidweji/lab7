@@ -1,0 +1,45 @@
+.about {
+    background: linear-gradient(to bottom, rgb(0, 195, 255), white);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.top {
+    padding-bottom: 50px;
+}
+
+.item {
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.266);
+    border-radius: 5px;
+    background-color: rgb(182, 242, 255);
+}
+.skill {
+    border: 1px solid rgba(0, 0, 0, 0.415);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.266);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background-color: aquamarine;
+}
+
+.searchBar {
+    width: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.checkBoxes {
+    font-weight: bold;
+}
+.checkBox {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.noneFound {
+    font-weight: bold;
+    color: red;
+    font-size: xx-large;
+}

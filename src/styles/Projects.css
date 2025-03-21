@@ -1,0 +1,17 @@
+.projects {
+    background: linear-gradient(to bottom, rgb(0, 195, 255), white);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.top {
+    padding-bottom: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.266);
+    border: none !important;
+    margin-left: 10px;
+}
+.card-body {
+    background-color: rgb(182, 242, 255);
+}

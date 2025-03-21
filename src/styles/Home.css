@@ -1,0 +1,9 @@
+.home {
+    background: linear-gradient(to bottom, rgb(0, 195, 255), white);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.img-of-me {
+    width: 300px;
+    border-radius: 5px;
+}

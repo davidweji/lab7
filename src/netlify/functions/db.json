@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Dalhousie Chess Club",
+        "author": "David W.",
+        "languages": ["React", "HTML", "CSS"],
+        "description": "Helped create a website from scratch for the Dalhousie Chess Club. My role was a junior developer and some of the contributions I did was creating the navbar, footer, organizers information page (about page)."
+    },
+    {
+        "id": 2,
+        "name": "QuickCash App",
+        "author": "David W.",
+        "languages": ["HTML", "CSS", "Firebase Database","Javascript"],
+        "description": "I am currently developing an Android app that deals with employers being able to post jobs for potential employee, and said employees searching for jobs. I am a developer in this project and some of the contributions I did was create the signup page, a search bar and filtering for searching for jobs."
+    }
+]
