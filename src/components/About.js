@@ -26,7 +26,7 @@ function About() {
             return matches;
         }
 
-        return matches && (frontendCheck && skill.category === "Frontend") || (backendCheck && skill.category === "Backend");
+        return matches && ((frontendCheck && skill.category === "Frontend") || (backendCheck && skill.category === "Backend"));
     })
     
     return(

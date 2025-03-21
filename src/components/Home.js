@@ -14,7 +14,7 @@ function Home() {
             <p>My name is David, and I am a 3rd year applied computer science student at Dalhousie University.</p>
             <p>I hope you enjoy my portfolio site, visit "About" to learn more about me!</p>
 
-            <img src={me} alt="Picture of me - David W." className="img-of-me" />
+            <img src={me} alt="me - David W." className="img-of-me" />
             <p>This is me</p>
 
             <LmDmForm />
