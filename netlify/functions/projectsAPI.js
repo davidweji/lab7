@@ -9,7 +9,7 @@ const router = express.Router();
 let projectData = [];
 
 try{
-    const dbPath = `${process.env.LAMBDA_TASK_ROOT}/netlify/functions/db.json`;
+    const dbPath = `/netlify/functions/db.json`;
     projectData = JSON.parse(fs.readFileSync(dbPath));
 }
 catch (err) {
