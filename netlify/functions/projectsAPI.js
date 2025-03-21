@@ -1,7 +1,7 @@
-import express from "express";
-import serverless from "serverless-http";
-import dotenv from "dotenv";
-import fs from "fs";
+const express = require("express");
+const serverless = require("serverless-http");
+const dotenv = require("dotenv");
+const fs = require("fs");
 
 dotenv.config();
 const api = express();
