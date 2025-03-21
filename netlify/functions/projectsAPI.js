@@ -16,7 +16,6 @@ catch (err) {
     console.log("failed to read db.json: ", err);
 }
 router.get("*", (req, res) => {
-    console.log("✅ Function hit with URL:", req.url);
     if(!projectData || projectData.length === 0) {
         return res.status(404).json({error: "No projects found."});
     }

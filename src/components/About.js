@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/About.css";
-import LmDmForm from "./LmDmForm";
 import { useLocalStorage } from "./useLocalStorage";
 import { useState } from "react";
 
@@ -118,8 +117,6 @@ function About() {
                     {filteringSkills.length === 0 ? <p className="noneFound">No Skills found.</p> : null}
                 </div>
             </div>
-
-            <LmDmForm />
         </div>
     );
 }

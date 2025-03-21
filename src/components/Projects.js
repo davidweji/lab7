@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Projects.css";
-import LmDmForm from "./LmDmForm";
 import { useLocalStorage } from "./useLocalStorage";
 
 function Projects() {
@@ -35,8 +34,6 @@ function Projects() {
                     ))}
                 </div>
             </div>
-
-            <LmDmForm />
         </div>
     );
 }
