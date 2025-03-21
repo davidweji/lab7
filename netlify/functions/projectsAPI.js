@@ -9,8 +9,7 @@ const router = express.Router();
 let projectData = [];
 
 try{
-    const dbPath = `netlify/functions/db.json`;
-    projectData = JSON.parse(fs.readFileSync(dbPath));
+    projectData = JSON.parse(fs.readFileSync("netlify/functions/db.json"));
 }
 catch (err) {
     console.log("failed to read db.json: ", err);
