@@ -14,6 +14,7 @@ try{
 catch (err) {
     console.log("failed to read db.json: ", err);
 }
+
 router.get("*", (req, res) => {
     if(!projectData || projectData.length === 0) {
         return res.status(404).json({error: "No projects found."});
