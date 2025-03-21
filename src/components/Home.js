@@ -11,7 +11,7 @@ function Home() {
     const [error, setError] = useState(null);
 
     useEffect (() => {
-        fetch("/.netlify/functions/weatherAPI/weather").then((res) => res.json()).then((data) => setWeather(data)).catch((err) => {
+        fetch("/.netlify/functions/weatherAPI").then((res) => res.json()).then((data) => setWeather(data)).catch((err) => {
             console.log("Failed to fetch weather:", err);
             setError("Failed to load weather.");
         });
