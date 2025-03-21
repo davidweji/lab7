@@ -8,7 +8,7 @@ function Projects() {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch("/api/projects").then(res => res.json()).then(data => setProjects(data)).catch(err => {
+        fetch("/.netlify/functions/projectsAPI").then(res => res.json()).then(data => setProjects(data)).catch(err => {
             console.log("Failed to fetch projects: ", err);
         });
     }, []);
