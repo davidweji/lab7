@@ -16,5 +16,5 @@ router.get("/", (req, res) => {
     res.json(projectData);
 });
 
-api.use("/api/", router);
+api.use("/", router);
 export const handler = serverless(api);
