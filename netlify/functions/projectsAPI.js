@@ -22,4 +22,10 @@ router.get("/", (req, res) => {
 });
 
 api.use("/", router);
-export const handler = serverless(api);
+export const handler = async (event, context) => {
+    console.log("✅ Function is running");
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Function works!" })
+    };
+  };
