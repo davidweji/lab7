@@ -20,7 +20,7 @@ try {
         city: data.name,
         country: data.sys.country,
         temperature: {
-            current: data.main.temp,
+            current: Math.round(data.main.temp),
             feels_like: data.main.feels_like,
             min: data.main.temp_min,
             max: data.main.temp_max,
