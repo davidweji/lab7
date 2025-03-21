@@ -9,7 +9,8 @@ const router = express.Router();
 let projectData = [];
 
 try{
-    projectData = JSON.parse(fs.readFileSync(`${__dirname}/db.json`));
+    const dbPath = `${process.env.LAMBDA_TASK_ROOT}/netlify/functions/db.json`;
+    projectData = JSON.parse(fs.readFileSync(dbPath));
 }
 catch (err) {
     console.log("failed to read db.json: ", err);
@@ -22,10 +23,4 @@ router.get("/", (req, res) => {
 });
 
 api.use("/", router);
-export const handler = async (event, context) => {
-    console.log("✅ Function is running");
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: "Function works!" })
-    };
-  };
+export const handler = serverless(api);
