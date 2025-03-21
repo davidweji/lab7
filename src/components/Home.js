@@ -32,6 +32,7 @@ function Home() {
                 {weather ? (
                     <div className="weatherData">
                         <p>City: {weather.city}, {weather.country}</p>
+                        <p>Temperature: {weather.temperature.current} C  |  Feels like: {weather.temperature.feels_like} C</p>
                     </div>
                 ) : !error && <p>loading weather...</p>}
             </div>
