@@ -11,7 +11,7 @@ const router = express.Router();
 
 const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=halifax,ca&&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
-router.get('/', async (req, res) => {
+router.get('*', async (req, res) => {
 fetch(weatherAPI)
 .then(res => res.json())
 .then(json => console.log(json))
