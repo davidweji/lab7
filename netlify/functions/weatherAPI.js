@@ -1,7 +1,6 @@
 const express = require("express");
 const serverless = require("serverless-http");
 const dotenv = require("dotenv");
-const cors = require("cors");
 
 const fetch = (...args) =>
 import('node-fetch').then(({default: fetch}) => fetch(...args));
@@ -9,8 +8,6 @@ import('node-fetch').then(({default: fetch}) => fetch(...args));
 dotenv.config();
 const app = express();
 const router = express.Router();
-
-app.use(cors());
 
 const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=halifax,ca&&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
